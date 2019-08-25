@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="OptimizedCPU">
+      <UniqueIdentifier>{aa961d57-25d6-46fe-a053-cd628d76a517}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OptimizedCUDA">
+      <UniqueIdentifier>{d17577ad-9348-4013-be57-76515514ae47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SingleThreadCPU">
+      <UniqueIdentifier>{26aaee59-4809-4b63-90c7-29c0826a851f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SharedFuncts">
+      <UniqueIdentifier>{1b8bf84c-d573-4357-afcd-8294402c5954}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QtGuiApplication1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DetailedTimings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="driverBpStereoCPU.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="imageHelpers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessBPOnTargetDevice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RunBpStereoSet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OptimizeCPU\KernelBpStereoCPU.cpp">
+      <Filter>OptimizedCPU</Filter>
+    </ClCompile>
+    <ClCompile Include="OptimizeCPU\ProcessOptimizedCPUBP.cpp">
+      <Filter>OptimizedCPU</Filter>
+    </ClCompile>
+    <ClCompile Include="OptimizeCPU\RunBpStereoOptimizedCPU.cpp">
+      <Filter>OptimizedCPU</Filter>
+    </ClCompile>
+    <ClCompile Include="OptimizeCPU\SmoothImageCPU.cpp">
+      <Filter>OptimizedCPU</Filter>
+    </ClCompile>
+    <ClCompile Include="OptimizeCUDA\ProcessCUDABP.cpp">
+      <Filter>OptimizedCUDA</Filter>
+    </ClCompile>
+    <ClCompile Include="OptimizeCUDA\RunBpStereoSetOnGPUWithCUDA.cpp">
+      <Filter>OptimizedCUDA</Filter>
+    </ClCompile>
+    <ClCompile Include="OptimizeCUDA\SmoothImageCUDA.cpp">
+      <Filter>OptimizedCUDA</Filter>
+    </ClCompile>
+    <ClCompile Include="SingleThreadCPU\stereo.cpp">
+      <Filter>SingleThreadCPU</Filter>
+    </ClCompile>
+    <ClCompile Include="SmoothImage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stereoResultsEval.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="QtGuiApplication1.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="QtGuiApplication1.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="QtGuiApplication1.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bpParametersFromPython.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bpStereoCudaParameters.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bpStereoParameters.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DetailedTimings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="imageHelpers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessBPOnTargetDevice.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OptimizeCPU\KernelBpStereoCPU.h">
+      <Filter>OptimizedCPU</Filter>
+    </ClInclude>
+    <ClInclude Include="OptimizeCPU\KernelBpStereoCPU_ARMTemplateSpFuncts.h">
+      <Filter>OptimizedCPU</Filter>
+    </ClInclude>
+    <ClInclude Include="OptimizeCPU\KernelBpStereoCPU_AVX256TemplateSpFuncts.h">
+      <Filter>OptimizedCPU</Filter>
+    </ClInclude>
+    <ClInclude Include="OptimizeCPU\KernelBpStereoCPU_AVX512TemplateSpFuncts.h">
+      <Filter>OptimizedCPU</Filter>
+    </ClInclude>
+    <ClInclude Include="OptimizeCPU\KernelBpStereoCPU_NEON.h">
+      <Filter>OptimizedCPU</Filter>
+    </ClInclude>
+    <ClInclude Include="OptimizeCPU\KernelBpStereoCPU_TemplateSpFuncts.h">
+      <Filter>OptimizedCPU</Filter>
+    </ClInclude>
+    <ClInclude Include="OptimizeCPU\ProcessOptimizedCPUBP.h">
+      <Filter>OptimizedCPU</Filter>
+    </ClInclude>
+    <ClInclude Include="OptimizeCPU\RunBpStereoOptimizedCPU.h">
+      <Filter>OptimizedCPU</Filter>
+    </ClInclude>
+    <ClInclude Include="OptimizeCPU\SmoothImageCPU.h">
+      <Filter>OptimizedCPU</Filter>
+    </ClInclude>
+    <ClInclude Include="OptimizeCUDA\kernalBpStereoHeader.cuh">
+      <Filter>OptimizedCUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="OptimizeCUDA\kernalFilterHeader.cuh">
+      <Filter>OptimizedCUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="OptimizeCUDA\ProcessCUDABP.h">
+      <Filter>OptimizedCUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="OptimizeCUDA\RunBpStereoSetOnGPUWithCUDA.h">
+      <Filter>OptimizedCUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="OptimizeCUDA\SmoothImageCUDA.h">
+      <Filter>OptimizedCUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="SingleThreadCPU\misc.h">
+      <Filter>SingleThreadCPU</Filter>
+    </ClInclude>
+    <ClInclude Include="SingleThreadCPU\convolve.h">
+      <Filter>SingleThreadCPU</Filter>
+    </ClInclude>
+    <ClInclude Include="SingleThreadCPU\filter.h">
+      <Filter>SingleThreadCPU</Filter>
+    </ClInclude>
+    <ClInclude Include="SingleThreadCPU\image.h">
+      <Filter>SingleThreadCPU</Filter>
+    </ClInclude>
+    <ClInclude Include="SingleThreadCPU\imconv.h">
+      <Filter>SingleThreadCPU</Filter>
+    </ClInclude>
+    <ClInclude Include="SingleThreadCPU\imutil.h">
+      <Filter>SingleThreadCPU</Filter>
+    </ClInclude>
+    <ClInclude Include="SingleThreadCPU\pnmfile.h">
+      <Filter>SingleThreadCPU</Filter>
+    </ClInclude>
+    <ClInclude Include="SingleThreadCPU\stereo.h">
+      <Filter>SingleThreadCPU</Filter>
+    </ClInclude>
+    <ClInclude Include="SharedFuncts\SharedBPProcessingFuncts.h">
+      <Filter>SharedFuncts</Filter>
+    </ClInclude>
+    <ClInclude Include="SharedFuncts\SharedSmoothImageFuncts.h">
+      <Filter>SharedFuncts</Filter>
+    </ClInclude>
+    <ClInclude Include="SharedFuncts\SharedUtilFuncts.h">
+      <Filter>SharedFuncts</Filter>
+    </ClInclude>
+    <ClInclude Include="RunBpStereoSet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SmoothImage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stereoResultsEval.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stereoResultsEvalParameters.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="driverCudaBp.cu" />
+    <CudaCompile Include="OptimizeCUDA\kernalBpStereo.cu">
+      <Filter>OptimizedCUDA</Filter>
+    </CudaCompile>
+    <CudaCompile Include="OptimizeCUDA\kernalFilter.cu">
+      <Filter>OptimizedCUDA</Filter>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README" />
+    <None Include="refImageTsukuba.pgm" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="test">
+    <file>test.qrc</file>
+  </qresource>
+  <qresource prefix="test2"/>
+</RCC>
