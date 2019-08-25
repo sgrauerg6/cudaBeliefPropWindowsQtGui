@@ -130,6 +130,7 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="GuiProcessStereoSet.cpp" />
     <ClCompile Include="imageHelpers.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="OptimizeCPU\KernelBpStereoCPU.cpp" />
@@ -160,6 +161,7 @@
     <ClInclude Include="bpStereoCudaParameters.h" />
     <ClInclude Include="bpStereoParameters.h" />
     <ClInclude Include="DetailedTimings.h" />
+    <ClInclude Include="GuiProcessStereoSet.h" />
     <ClInclude Include="imageHelpers.h" />
     <ClInclude Include="OptimizeCPU\KernelBpStereoCPU.h" />
     <ClInclude Include="OptimizeCPU\KernelBpStereoCPU_ARMTemplateSpFuncts.h" />
@@ -211,10 +213,6 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </CudaCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="README" />
-    <None Include="refImageTsukuba.pgm" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

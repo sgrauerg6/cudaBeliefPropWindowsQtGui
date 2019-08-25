@@ -59,6 +59,7 @@ public:
 	virtual float operator()(const char* refImagePath, const char* testImagePath,
 		BPsettings algSettings, const char* saveDisparityMapImagePath, FILE* resultsFile) = 0;
 
+protected:
 	float processStereoSet(const char* refImagePath, const char* testImagePath,
 			BPsettings algSettings,	const char* saveDisparityMapImagePath, FILE* resultsFile, SmoothImage* smoothImage, ProcessBPOnTargetDevice<T>* runBpStereo, RunBpStereoSetMemoryManagement* runBPMemoryMangement = nullptr)
 	{

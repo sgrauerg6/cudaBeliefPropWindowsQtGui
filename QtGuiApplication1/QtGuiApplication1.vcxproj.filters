@@ -40,12 +40,12 @@
     <Filter Include="SharedFuncts">
       <UniqueIdentifier>{1b8bf84c-d573-4357-afcd-8294402c5954}</UniqueIdentifier>
     </Filter>
+    <Filter Include="GUIFiles">
+      <UniqueIdentifier>{2c7f0c69-7d79-4758-860b-b0383d84e15e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="QtGuiApplication1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="DetailedTimings.cpp">
@@ -75,15 +75,6 @@
     <ClCompile Include="OptimizeCPU\SmoothImageCPU.cpp">
       <Filter>OptimizedCPU</Filter>
     </ClCompile>
-    <ClCompile Include="OptimizeCUDA\ProcessCUDABP.cpp">
-      <Filter>OptimizedCUDA</Filter>
-    </ClCompile>
-    <ClCompile Include="OptimizeCUDA\RunBpStereoSetOnGPUWithCUDA.cpp">
-      <Filter>OptimizedCUDA</Filter>
-    </ClCompile>
-    <ClCompile Include="OptimizeCUDA\SmoothImageCUDA.cpp">
-      <Filter>OptimizedCUDA</Filter>
-    </ClCompile>
     <ClCompile Include="SingleThreadCPU\stereo.cpp">
       <Filter>SingleThreadCPU</Filter>
     </ClCompile>
@@ -93,16 +84,12 @@
     <ClCompile Include="stereoResultsEval.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <QtMoc Include="QtGuiApplication1.h">
-      <Filter>Header Files</Filter>
-    </QtMoc>
-  </ItemGroup>
-  <ItemGroup>
-    <QtUic Include="QtGuiApplication1.ui">
-      <Filter>Form Files</Filter>
-    </QtUic>
+    <ClCompile Include="QtGuiApplication1.cpp">
+      <Filter>GUIFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="GuiProcessStereoSet.cpp">
+      <Filter>GUIFiles</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtRcc Include="QtGuiApplication1.qrc">
@@ -161,15 +148,6 @@
     <ClInclude Include="OptimizeCUDA\kernalFilterHeader.cuh">
       <Filter>OptimizedCUDA</Filter>
     </ClInclude>
-    <ClInclude Include="OptimizeCUDA\ProcessCUDABP.h">
-      <Filter>OptimizedCUDA</Filter>
-    </ClInclude>
-    <ClInclude Include="OptimizeCUDA\RunBpStereoSetOnGPUWithCUDA.h">
-      <Filter>OptimizedCUDA</Filter>
-    </ClInclude>
-    <ClInclude Include="OptimizeCUDA\SmoothImageCUDA.h">
-      <Filter>OptimizedCUDA</Filter>
-    </ClInclude>
     <ClInclude Include="SingleThreadCPU\misc.h">
       <Filter>SingleThreadCPU</Filter>
     </ClInclude>
@@ -215,6 +193,9 @@
     <ClInclude Include="stereoResultsEvalParameters.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="GuiProcessStereoSet.h">
+      <Filter>GUIFiles</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CudaCompile Include="driverCudaBp.cu" />
@@ -224,9 +205,33 @@
     <CudaCompile Include="OptimizeCUDA\kernalFilter.cu">
       <Filter>OptimizedCUDA</Filter>
     </CudaCompile>
+    <CudaCompile Include="OptimizeCUDA\RunBpStereoSetOnGPUWithCUDA.cpp">
+      <Filter>OptimizedCUDA</Filter>
+    </CudaCompile>
+    <CudaCompile Include="OptimizeCUDA\ProcessCUDABP.cpp">
+      <Filter>OptimizedCUDA</Filter>
+    </CudaCompile>
+    <CudaCompile Include="OptimizeCUDA\RunBpStereoSetOnGPUWithCUDA.h">
+      <Filter>OptimizedCUDA</Filter>
+    </CudaCompile>
+    <CudaCompile Include="OptimizeCUDA\ProcessCUDABP.h">
+      <Filter>OptimizedCUDA</Filter>
+    </CudaCompile>
+    <CudaCompile Include="OptimizeCUDA\SmoothImageCUDA.h">
+      <Filter>OptimizedCUDA</Filter>
+    </CudaCompile>
+    <CudaCompile Include="OptimizeCUDA\SmoothImageCUDA.cpp">
+      <Filter>OptimizedCUDA</Filter>
+    </CudaCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="README" />
-    <None Include="refImageTsukuba.pgm" />
+    <QtMoc Include="QtGuiApplication1.h">
+      <Filter>GUIFiles</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="QtGuiApplication1.ui">
+      <Filter>GUIFiles</Filter>
+    </QtUic>
   </ItemGroup>
 </Project>
